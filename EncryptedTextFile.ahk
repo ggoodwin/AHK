@@ -13,10 +13,10 @@ SetWorkingDir, %A_ScriptDir%
 
 InputBox, userInput, Enter file name, , , 150, 100
 
-FileAppend, Secure File, *C:\Users\gregg\Documents\MEGAsync\AxCrypt\%userInput%.txt
+FileAppend, Secure File, *C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%.txt
 
 RunWait, powershell.exe -File "Encrypt.ps1" "%userInput%.txt", , Hide
 
 Sleep, 2000
 
-Run, C:\Users\gregg\Documents\MEGAsync\AxCrypt\%userInput%-txt.axx
+Run, C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%-txt.axx
