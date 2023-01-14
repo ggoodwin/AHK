@@ -15,3 +15,4 @@ SetWorkingDir, %A_ScriptDir%
 ::@@@::mullcord@proton.me
 ::22::4699898644
 ::gg::Greg Goodwin
+::--::----------------
