@@ -13,13 +13,13 @@ SetWorkingDir, %A_ScriptDir%
 
   InputBox, userInput, Enter file name, , , 150, 100
 
-  FileAppend, Secure File, *C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%.md
+  FileAppend, Secure File, *C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%.txt
 
-  RunWait, powershell.exe -File "Encrypt.ps1" "%userInput%.md", , Hide
+  RunWait, powershell.exe -File "Encrypt.ps1" "%userInput%.txt", , Hide
 
   Sleep, 2000
 
-  Run, C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%-md.axx
+  Run, C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%-txt.axx
 
   Exit
 
@@ -27,10 +27,10 @@ SetWorkingDir, %A_ScriptDir%
 
   InputBox, userInput, Enter file name, , , 150, 100
 
-  FileAppend, Secure File, *C:\Users\gregg\Documents\MEGAsync\Crypto\%userInput%.md
+  FileAppend, Secure File, *C:\Users\gregg\Documents\MEGAsync\Crypto\%userInput%.txt
 
-  RunWait, powershell.exe -File "EncryptCrypto.ps1" "%userInput%.md", , Hide
+  RunWait, powershell.exe -File "EncryptCrypto.ps1" "%userInput%.txt", , Hide
 
   Sleep, 2000
 
-  Run, C:\Users\gregg\Documents\MEGAsync\Crypto\%userInput%-md.axx
+  Run, C:\Users\gregg\Documents\MEGAsync\Crypto\%userInput%-txt.axx
