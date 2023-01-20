@@ -5,11 +5,6 @@ if not A_IsAdmin
 }
 
 #NoEnv
-if not A_IsAdmin
-{
-  Run *RunAs "%A_ScriptFullPath%"
-  ExitApp
-}
 
 SendMode Input
 SetWorkingDir %A_ScriptDir%
@@ -28,9 +23,9 @@ OpenVMWare:
   Click, 2139, 949
   Sleep 1000
   WinMinimize, vk1478129
-  Return
+Return
 
 ; This is the function that gets called when the hotkey is pressed
 TogglePause:
   Pause, Toggle
-  return
+return
