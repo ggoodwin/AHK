@@ -29,11 +29,13 @@ SetWorkingDir, %A_ScriptDir%
 
   FileAppend, Secure File, *C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%.md
 
-  RunWait, powershell.exe -File "Encrypt.ps1" "C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%.md", , Hide
+  ; RunWait, powershell.exe -File "Encrypt.ps1" "C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%.md", , Hide
 
   Sleep, 2000
 
-  Run, C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%-md.axx
+  ; Run, C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%-md.axx
+
+  Run, C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%.md
 
   Exit
 
