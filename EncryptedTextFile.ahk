@@ -27,7 +27,7 @@ SetWorkingDir, %A_ScriptDir%
 
   InputBox, userInput, Enter file name, , , 150, 100
 
-  FileAppend, Secure File, *C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%.md
+  FileAppend, Secure File, *E:\Github\octocrypto\markdown\%userInput%.md
 
   ; RunWait, powershell.exe -File "Encrypt.ps1" "C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%.md", , Hide
 
@@ -35,7 +35,7 @@ SetWorkingDir, %A_ScriptDir%
 
   ; Run, C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%-md.axx
 
-  Run, C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%.md
+  Run, E:\Github\octocrypto\markdown\%userInput%.md
 
   Exit
 
