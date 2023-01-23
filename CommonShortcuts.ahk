@@ -15,3 +15,4 @@ SetWorkingDir, %A_ScriptDir%
 ::22::4699898644
 ::gg::Greg Goodwin
 ::--::----------------
+::raw::https://raw.githubusercontent.com/octocrypto/markdown/main/Images/
