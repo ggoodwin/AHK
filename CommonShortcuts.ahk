@@ -12,7 +12,8 @@ SetWorkingDir, %A_ScriptDir%
 #SingleInstance, Force
 
 ::@@::greggoodwin@gmail.com
+::gov::govet@pm.com
 ::22::4699898644
 ::gg::Greg Goodwin
 ::--::----------------
-::raw::https://raw.githubusercontent.com/octocrypto/markdown/main/Images/
+::hh::(https://raw.githubusercontent.com/octocrypto/markdown/main/images/)
