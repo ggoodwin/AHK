@@ -17,7 +17,7 @@ SetWorkingDir, %A_ScriptDir%
 
   RunWait, powershell.exe -File "Encrypt.ps1" "C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%.txt", , Hide
 
-  Sleep, 2000
+  Sleep, 5000
 
   Run, C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%-txt.axx
 
@@ -31,7 +31,7 @@ SetWorkingDir, %A_ScriptDir%
 
   ; RunWait, powershell.exe -File "Encrypt.ps1" "C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%.md", , Hide
 
-  Sleep, 2000
+  Sleep, 5000
 
   ; Run, C:\Users\gregg\Documents\MEGAsync\Markdown\%userInput%-md.axx
 
@@ -47,7 +47,7 @@ SetWorkingDir, %A_ScriptDir%
 
   RunWait, powershell.exe -File "Encrypt.ps1" "C:\Users\gregg\Documents\MEGAsync\Crypto\%userInput%.txt", , Hide
 
-  Sleep, 2000
+  Sleep, 5000
 
   Run, C:\Users\gregg\Documents\MEGAsync\Crypto\%userInput%-txt.axx
 
