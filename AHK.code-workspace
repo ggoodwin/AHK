@@ -4,5 +4,9 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"docwriter.custom.template": "; {{summary}}\n{{#params}}\n; @param {{name}} ({{type}}) - {{paramExplained}}\n{{/params}}\n{{#returnExplained}}\n; @returns {{.}}\n{{/returnExplained}}\n\n; Generated on {{date}}",
+		"docwriter.custom.author": "github.com/ggoodwin",
+		"docwriter.style": "Custom"
+	}
 }

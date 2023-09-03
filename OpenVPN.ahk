@@ -18,11 +18,11 @@ SetTimer, OpenVMWare, 300000
 Return
 
 OpenVMWare:
-  WinRestore, vk1478129
+  WinRestore, vk1524599
   Sleep 1000
   Click, 2139, 949
   Sleep 1000
-  WinMinimize, vk1478129
+  WinMinimize, vk1524599
 Return
 
 ; This is the function that gets called when the hotkey is pressed

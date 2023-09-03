@@ -35,5 +35,4 @@ If WinActive("ahk_class CabinetWClass") || WinActive("ahk_class ExploreWClass") 
     Run, pwsh, % dir ? dir : A_Desktop
     WinActivate, "Administrator: C:\Program Files\PowerShell\7\pwsh.exe"
     }
-
 }
