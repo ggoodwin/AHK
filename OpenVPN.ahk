@@ -12,7 +12,7 @@ SetWorkingDir %A_ScriptDir%
 SetTitleMatchMode 2
 
 ; Set a hotkey to pause and un-pause the script
-Hotkey, Pause, TogglePause
+Hotkey, Home, TogglePause
 
 SetTimer, OpenVMWare, 300000
 Return
