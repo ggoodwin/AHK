@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning].
 
 - Will list future updates here
 
+## [0.1.0] - 2023-09-16
+
+### Changed
+
+- Consolidated Hotkeys
+
+### Removed
+
+- Removed unused code
+
 ## [0.0.1] - 2023-01-16
 
 ### Added
@@ -30,5 +40,6 @@ and this project adheres to [Semantic Versioning].
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
 
 <!-- Versions -->
-[unreleased]: https://github.com/ggoodwin/AHK/compare/v0.0.1...MAIN
+[unreleased]: https://github.com/ggoodwin/AHK/compare/v0.1.0...Develop
+[0.1.0]: https://github.com/ggoodwin/AHK/releases/tag/v0.1.0
 [0.0.1]: https://github.com/ggoodwin/AHK/releases/tag/v0.0.1
