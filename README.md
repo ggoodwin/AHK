@@ -24,7 +24,7 @@ Make sure you have `AutoHotkey2` installed on your machine.
 
 ## 💰 Usage
 
-## 💻 Dependencies``
+## 💻 Dependencies
 
 - [AutoHotkey2]
 
