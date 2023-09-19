@@ -66,10 +66,6 @@ gitHubClone()
 
   Send {g}{i}{t}{Space}{c}{l}{o}{n}{e}{Space}%userInput%{Enter}
 
-  Sleep, 1000
-
-  Send {8}{0}{2}{5}{3}{r}{d}{A}{v}{e}{N}{#}{Enter}
-
   Exit
 }
 
