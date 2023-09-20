@@ -48,7 +48,7 @@ createEncryptedTextFile()
 {
   InputBox, userInput, Enter file name, , , 150, 100
 
-  FileAppend, Secure File, *C:\Users\gregg\Proton Drive\coyto\My files\Encrypted\Texts\%userInput%.txt
+  FileAppend, Secure File, "*C:\Users\gregg\Proton Drive\coyto\My files\Encrypted\Texts\%userInput%.txt"
 
   RunWait, powershell.exe -File "Encrypt.ps1" "C:\Users\gregg\Proton Drive\coyto\My files\Encrypted\Texts\%userInput%.txt", , Hide
 
