@@ -90,7 +90,7 @@ openInNotepadPlusPlus()
 {
   items := selectedItems()
   For index, item in StrSplit(items, ",")
-    Run, "C:\Program Files\Notepad++\notepad++.exe" %item%
+    Run, "C:\Program Files\Notepad++\notepad++.exe" "%item%"
 }
 
 ;----------------------------------------
