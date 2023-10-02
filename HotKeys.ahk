@@ -34,27 +34,69 @@ SetWorkingDir, %A_ScriptDir%
 ^+t:: createEncryptedTextFile()
 
 ; GitHub Clone
-^+g:: gitHubClone()
+#IfWinActive ahk_class CabinetWClass
+^+g::
+    gitHubClone()
+#IfWinActive
 
 ; Open in Notepad++
 ^!n:: openInNotepadPlusPlus()
 
+; Initialize Repository
+^+i:: initializeRepository()
+
 ;----------------------------------------
 ; Functions
 ;----------------------------------------
+
+; Initialize Repository
+initializeRepository()
+{
+  InputBox, userInput, Enter repository name, , , 150, 100
+
+  pwshHere()
+
+  Sleep, 5000
+
+  Send {g}{i}{t}{Space}{i}{n}{i}{t}{Enter}
+
+  Sleep, 1000
+
+  Send {g}{i}{t}{Space}{a}{d}{d}{Space}{.}{Enter}
+
+  Sleep, 1000
+
+  Send {g}{i}{t}{Space}{c}{o}{m}{m}{i}{t}{Space}{-}{m}{Space}{'}{f}{i}{r}{s}{t}{'}{Enter}
+
+  Sleep, 1000
+
+  Send {g}{i}{t}{Space}{b}{r}{a}{n}{c}{h}{Space}{-}{M}{Space}{m}{a}{s}{t}{e}{r}{Enter}
+
+  Sleep, 1000
+
+  Send {g}{i}{t}{Space}{r}{e}{m}{o}{t}{e}{Space}{a}{d}{d}{Space}{o}{r}{i}{g}{i}{n}{Space}%userInput%{Enter}
+
+  Sleep, 1000
+
+  Send {g}{i}{t}{Space}{p}{u}{s}{h}{Space}{-}{u}{Space}{o}{r}{i}{g}{i}{n}{Space}{m}{a}{s}{t}{e}{r}{Enter}
+
+  Exit
+}
 
 ; Create and Encrypt Text File
 createEncryptedTextFile()
 {
   InputBox, userInput, Enter file name, , , 150, 100
 
-  FileAppend, Secure File, "*C:\Users\gregg\Proton Drive\coyto\My files\Encrypted\Texts\%userInput%.txt"
+  FileAppend, Secure File, *C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%.txt
 
-  RunWait, powershell.exe -File "Encrypt.ps1" "C:\Users\gregg\Proton Drive\coyto\My files\Encrypted\Texts\%userInput%.txt", , Hide
+  Sleep, 1000
+  
+  RunWait, powershell.exe -File "Encrypt.ps1" C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%.txt, , Hide
 
   Sleep, 5000
 
-  Run, "C:\Users\gregg\Proton Drive\coyto\My files\Encrypted\Texts\%userInput%-txt.axx"
+  Run, C:\Users\gregg\Documents\MEGAsync\Texts\%userInput%-txt.axx
 
   Exit
 }
@@ -63,6 +105,10 @@ createEncryptedTextFile()
 gitHubClone()
 {
   InputBox, userInput, Enter repository url, , , 150, 100
+
+  pwshHere()
+
+  Sleep, 5000
 
   Send {g}{i}{t}{Space}{c}{l}{o}{n}{e}{Space}%userInput%{Enter}
 
